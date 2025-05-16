@@ -1,0 +1,10 @@
+<div class="news-container">
+  <mat-card *ngFor="let article of articles" class="news-card">
+    <img mat-card-image src="{{article.imageUrl}}" alt="news image">
+    <mat-card-title>{{ article.title }}</mat-card-title>
+    <mat-card-subtitle>{{ article.category }} | {{ article.publishedDate | date }}</mat-card-subtitle>
+    <mat-card-content>
+      <p>{{ article.content }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
