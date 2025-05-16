@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class NewsService {
   // test natifly
-  private apiUrl = 'http://alahlysport360.runasp.net/api/News';
+  private apiUrl = 'https://alahlysport360.runasp.net/api/News';
 
   constructor(private http: HttpClient) {}
 
